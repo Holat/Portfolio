@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+    background-image: url("./images/Fluid-10s-1494px.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color:  black;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    font-family: inherit;
+}
+
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar{
+    justify-content:space-between;
+    padding: 1rem 4rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.311);
+}
+
+.logo{
+    background-image: url("./images/Lovepik_com-400670999-geometric-lines.png");
+    background-size: cover;
+    color: white;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 20px;
+    gap: 10px;
+}
+
+.logo-img{
+    border-radius: 50%;
+    aspect-ratio: 1;
+    width: 40px;
+    border: 2px solid steelblue;
+}
+
+.links ul{
+    color: white;
+    gap: 3rem;
+}
+
+.link{
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.link:hover{
+    font-weight: 500;
+    text-shadow: 0 0 1px #000;
+}
+
+.active{
+    font-weight: 500;
+}
+
+.header{
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 3rem;
+    padding: 4rem;
+    gap: 4rem;
+}
+
+.avatar-wrapper{
+    width: 300px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    box-shadow: 20px 20px  10px rgba(46, 97, 108, 0.205);
+    overflow: hidden;
+    position: relative;
+    border: 2px solid steelblue;
+    /* filter: brightness(110%); */
+}
+
+.avatar{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    transform: translateY(-15%);
+}
+
+.intro{
+    color:white;
+}
+
+.intro p{
+    font-weight: 400;
+}
+
+.intro h1{
+    font-size: 6rem;
+    font-weight: 500;
+    line-height: 1.1em;
+}
+
+.intro button{
+    display: block;
+    background-color: transparent;
+    font-family: inherit;
+    border-radius: 10px;
+    border: 1.5px solid steelblue;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    color: inherit;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.intro button:hover{
+    background-color: white;
+    color: steelblue;
+}
+
+.about{
+    margin-block: 2rem;
+    padding-inline: 6rem;
+    padding-block: 5rem;
+    background-image: url("./images/pngfind.com-connections-png-6603141.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.underline{
+    background-color: #3b91d7;
+    height: 4px;
+    width: 80px;
+}
+
+.about > p{
+    width: 40%;
+    line-height: 1.6em;
+    margin-top: 2rem;
+}
+.info-container{
+    margin-top: 1.5rem;
+}
+.info{
+    gap: 5px;
+    margin-bottom: 1rem;
+}
+.info-title{
+    font-weight: 500;
+    gap: 10px;
+}
+.info-title img{
+    width: 12px;
+}
+
+.socials{
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.social{
+    width: 28px;
+    transition: filter 0.5s ease;
+}
+
+.social:hover{
+    filter: brightness(60%);
+}
+
+.challenges{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding: 5rem;
+    background-image: url("./images/Lovepik_com-400670999-geometric-lines.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+.challenge{
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #252424;
+    box-shadow: 0 0 5px #383838e6;
+    
+}
+
+.img{
+    overflow: hidden;
+}
+
+.img img{
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+.img img:hover{
+    transform: scale(1.1);
+}
+
+.challenge-title{
+    padding: 3rem;
+}
+
+.challenge-title h2{
+    color: #3b91d7;
+}
+.challenge-title button{
+    padding: 0.5rem 1.2rem;
+    margin-top: 1rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    background-color: #3b91d7 ;
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.challenge-title button:hover{
+    background-color: transparent;
+    outline: 1.5px solid #3b91d7;
+    color: #3b91d7;
+
+}
+
+footer{
+    text-align: center;
+    background-color: #252424 ;
+    padding: 5px;
+}
+@media screen and (max-width: 800px) {
+    body{
+        background-size: auto;
+    }
+    .nav-bar{
+        padding: 1rem;
+    }
+    .nav-bar ul{
+        gap: 1rem;
+        font-size: 0.8rem;
+    }
+    .header{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .intro button{
+       margin: 10px auto;
+    }
+    .about{
+        text-align: center;
+        background-position: center center;
+        padding-inline: 2rem;
+    }
+    .about > P{
+        width: 100%;
+    }
+    .underline{
+        margin: 0 auto;
+    }
+    .info{
+        justify-content: center;
+    }
+    .socials{
+        justify-content: center;
+    }
+    .challenges{
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    .challenge{
+        text-align: center;
+    }
+    .automobile{
+        height: auto;
+    }
+}
